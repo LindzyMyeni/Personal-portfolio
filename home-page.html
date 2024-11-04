@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .navbar {
+        margin: auto 0;
+        display: flex;
+        align-items: center;
+        background-color: rgb(70, 69, 69);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+        padding: 0px;
+      }
+      .navbar ul li {
+        font-family: "Times New Roman", Times, serif;
+        
+        /*font-size: small;*/
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 25px;
+        transition: all 150mms ease-in-out;
+      }
+      .navbar ul li a:hover{
+        background-color: white;
+        color: black;
+     
+      }
+      .home{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.5);
+        height: 840px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+      }
+      .home::before{
+         content: "";
+         position: relative;
+         top: 0;
+         right: 0;
+         background: url('https://e0.pxfuel.com/wallpapers/6/293/desktop-wallpaper-big-leaves-cool-temperature-resolution-cool-leaf.jpg')no-repeat center center/cover;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.8 ;
+      }
+      .main{
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid white;*/
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        right:10px ;
+        z-index: 1;
+      }
+      .heading{
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px ;
+      }
+      .button{
+        padding: 10px 154px;
+        background-color: transparent;
+        /*border: 1px solid white;*/
+        color: white;
+        outline: none;
+        transition: .5s ease;
+      }
+      .button:hover{
+        cursor: pointer;
+        background-color: rgb(0.2, 0, 0,0 );
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="home">
+        <div class="main">
+            <h1 class="heading">
+               I am <br>
+               Lindokuhle Ntombela
+            </h1>
+            <button class="button">
+                Learn More
+            </button>
+
+        </div>
+    </section>
+    <section id="about">
+        <div id="image">
+            <h1 class="heading">
+               ABOUT ME
+            </h1>
+            <img src="https://e0.pxfuel.com/wallpapers/6/293/desktop-wallpaper-big-leaves-cool-temperature-resolution-cool-leaf.jpg " alt="">
+            <div id="introduction">
+                <h2>
+                   Lindokuhle Ntombela
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur quos ratione unde eum nihil repudiandae saepe ipsam dolorem sed repellendus rerum, ad minima? Omnis maxime dolores excepturi eaque at?
+                   
+                </p>
+            </div>
+        </div>
+    </section>
+
+  </body>
 </html>
+ 
