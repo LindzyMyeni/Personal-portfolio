@@ -6,22 +6,16 @@
     <title>HOME</title>
     <style>
       .container{
-        background-color: black;
-        opacity: 0.9;
-        color: white;
+        background: url('https://t3.ftcdn.net/jpg/07/01/16/44/360_F_701164458_92bhEz1CumZivUXYM51sRyo4KsGFXIuG.jpg')no-repeat center center/cover;
       }
       .navbar {
-       /* margin: auto 0;
+        margin: auto 0;
         display: flex;
         align-items: center;
         background-color: rgb(32, 32, 32);
         position: sticky;
         top: 0;
-        z-index: 1;*/
-        display: flex;
-        padding: 2% 6%;
-        justify-content: space-between;
-        align-items: right;
+        z-index: 1;
       }
       .navbar ul {
         display: flex;
@@ -29,27 +23,20 @@
         margin: 20px 0px;
         padding: 0px;
       }
+      .navbar ul li {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        /*font-size: small;*/
+      }
       .navbar ul li a {
         text-decoration: none;
         color: white;
         padding: 8px 25px;
         transition: all 150mms ease-in-out;
       }
-      .navbar ul li::after {
-       /* font-family: "Times New Roman", Times, serif;*/
-        content: "";
-        /*font-weight: bold;*/
-        width:0%;
-        height: 2px;
-        display: block;
-        margin: auto;
-        transition: 0,5s;
-    
-      }
-      .navbar ul li:hover::after {
-        width: 60%;
-        background:pink;
-        /*color: black;*/
+      .navbar ul li a:hover {
+        background-color: white;
+        color: black;
       }
       .home {
         display: flex;
@@ -66,16 +53,17 @@
         position: relative;
         top: 0;
         right: 0;
-        background: url("https://e0.pxfuel.com/wallpapers/6/293/desktop-wallpaper-big-leaves-cool-temperature-resolution-cool-leaf.jpg")
+        background: url("image.jpg")
           no-repeat center center/cover;
         height: 100%;
         width: 100%;
         z-index: -1;
-        opacity: 0.8;
+       
       }
       .main {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        /*border: 1px solid white;*/
         align-items: center;
         position: absolute;
         top: 30px;
@@ -87,19 +75,29 @@
         font-size: 3rem;
         text-align: center;
         margin: 40px 0px;
+        color: rgb(250, 212, 218);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
       }
       .button {
         padding: 10px 154px;
         background-color: transparent;
+        /*border: 1px solid white;*/
         color: white;
         outline: none;
         transition: 0.5s ease;
-        margin-top: 20px                                                                      ;
       }
       .button:hover {
         cursor: pointer;
         background-color: rgb(0.2, 0, 0, 0);
         color: black;
+      }
+      .image img{
+        transition: all 150ms ease-in-out;
+       
+      }
+      .image img:hover{
+        transform: scale(1.1);
+        margin: 20px 50px;
       }
       footer{
         text-align: center;
@@ -109,32 +107,21 @@
         font-size: large;
  
       }
-      .img{
-        margin-right:30px ;
-      }
-      .img img{
-        width: 300px;
-        height: 400px;
-      }
      
     </style>
   </head>
-  <body class="container">
+  <body class="container">         
     <nav class="navbar">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="about.html" target="_blank">About</a></li>
-        <li><a href="#">Skills</a></li>
+        <li><a href="skills.html">Skills</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <section class="home">
       <div class="main">
-        <div class="img">
-        <img src="https://content.latest-hairstyles.com/wp-content/uploads/pretty-hairstyles-for-little-black-girls-1200x900.jpg">
-             
-        </div>
         <h1 class="heading">
           I am <br />
           Lindokuhle Ntombela
@@ -146,8 +133,8 @@
       <div id="image">
         <h1 class="heading">ABOUT ME</h1>
         <img
-          src="https://e0.pxfuel.com/wallpapers/6/293/desktop-wallpaper-big-leaves-cool-temperature-resolution-cool-leaf.jpg "
-          alt=""
+          src="mypic.jpg"
+          
         />
         <div id="introduction">
           <h2>Lindokuhle Ntombela</h2>

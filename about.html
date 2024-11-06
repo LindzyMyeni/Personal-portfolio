@@ -6,6 +6,7 @@
     <title>About Me</title>
     <style>
       #about {
+        background: url('https://t3.ftcdn.net/jpg/07/01/16/44/360_F_701164458_92bhEz1CumZivUXYM51sRyo4KsGFXIuG.jpg')no-repeat center center/cover;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -18,53 +19,104 @@
         background-color: rgb(32, 32, 32);
         color: white;
         padding: 20px;
-        margin: 40px 0px;
+        margin: 15px 0px;
+      }
+      .head{
+        margin: 0px;
+        padding: 15px;
+        text-align: center;
+        color:rgb(73, 73, 73);
+      
+      }
+    
+      p{
+        margin: 10px 0px ;
+          font-size: 1.1em;
+          color: #666;
+          line-height: 1.8;
+          margin-bottom: 30px;
+ 
       }
       #image {
         display: flex;
        
       }
-      #image img {
-        width: 575px;
-        height: 400px;
+       img {
+        width: 400px;
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+       
       }
+     
       #introduction {
         display: flex;
         flex-direction: column;
-        text-align: justify;
+        text-align: center;
         padding: 10px;
       }
       #introduction h2 {
         font-size: 2rem;
         margin-bottom: 20px;
       }
-     
+     .clmn{
+      border: 1px solid brown;
+      border-radius: 5px;
+      margin: 20px;
+      padding: 10px 15px;
+     }
     </style>
   </head>
   <body>
-    <nav class="navbar"> 
-    </nav>
+    <nav class="navbar"></nav>
  
     <section id="home"></section>
  
     <section id="about">
       <h1 class="heading">ABOUT ME</h1>
+      <h2 class="head">My Story</h2>
       <div id="image">
         <img
-          src="https://e0.pxfuel.com/wallpapers/6/293/desktop-wallpaper-big-leaves-cool-temperature-resolution-cool-leaf.jpg "
-          alt=""
+        src="Image.jpg"
+                                        
         />
-        <div id="introduction">
-          <h2>Lindokuhle Ntombela</h2>
-          <p>
-            Detail-oriented, self-motivated final year BSc Computer Science student at the University of KwaZulu-Natal, currently seeking entry-level opportunities in the software development space. I am eager to apply a variety of my business and software development skills that I’ve learned.
-
-            I am highly skilled in Object-Oriented programming and well-versed in Java technologies, as well as numerous other programming languages listed such as Java , Python, C++, C#, HTML, PHP, Networking, Cloud Computing etc. I am also experienced in both Agile and Waterfall methodologies in the System Development Life Cycle (SDLC). I have the ability to quickly develop a working knowledge of new programs and technologies.
-
-            I am an organized, focused self-starter and dedicated team player who can work effectively in both team settings and independently. I can also handle a significant amount of responsibility with minimal supervision. I bring a positive presence to the workplace with excellent leadership, communication, and interpersonal skills.
-          </p>
-        </div>
       </div>
+      <div id="introduction">
+        <h2 class="head">Lindokuhle Sphelele Ntombela</h2>
+        <h3 class="head">"A STORY OF GROWTH AND DISCOVERY"</h3>
+        <div class="column">
+
+           <div class="clmn">
+           <h3>Background</h3>
+           <p>I am Lindokuhle Sphelele Ntombela and I hold a degree in Computer Science and Information Technology from the university of kwaZulu-Natal.I come from a <br>
+            very small town called Mkuze where I complited both my primary and high school at Mtwazi Combined School.
+           </p>
+           </div>
+
+           <div class="clmn">
+           <h3>Skills</h3>  
+           <p> I am highly skilled in Object-Oriented programming and well-versed in Java technologies, as well as numerous other programming<br>
+            languages listed such as <b>Java , Python, C++, C#, HTML,CSS,Java Script, PHP, Networking, Cloud Computing etc. </b>I  also have knowledge in both Agile <br>
+            and Waterfall methodologies in the System Development Life Cycle (SDLC). I have the ability to quickly develop a working knowledge<br>
+            of new programs and technologies.
+           </p>
+           </div>
+
+            <div class="clmn">
+            <h3>currently</h3>
+            <p>I am an organized, focused self-starter and dedicated team player who can work effectively in both team settings and independently.<br>
+              I can also handle a significant amount of responsibility with minimal supervision. I bring a positive presence to the workplace with<br>
+             excellent leadership, communication,problem solving and interpersonal skills
+             <br>
+             I am currently in the Ardagh graduate accelarator program that is focused on the APIs and Back-End Development and also upskilling myself with <br>
+             an online SheCodes Plus program that is more focused on the front-end Development.
+             </p>
+            </div>
+    
+        </div>
+        </div>
+   
     </section>
   </body>
 </html>
