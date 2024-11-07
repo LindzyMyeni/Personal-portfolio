@@ -1,178 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Test</title>
+    <style>
+      .container {
+        background: url('https://t3.ftcdn.net/jpg/07/01/16/44/360_F_701164458_92bhEz1CumZivUXYM51sRyo4KsGFXIuG.jpg') no-repeat center center/cover;
+        min-height: 100vh;
+      }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+      /* Navbar styling */
+      .navbar {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Align the list to the right */
+        background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 10px 30px; /* Padding around the navbar */
+      }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+      .navbar ul li {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 12px 20px;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 4px;
+      }
 
-section {
-    padding: 20px;
-}
+      .navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: black;
+      }
 
-.headshot {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
+      /* Home section styling */
+      .home {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+      }
 
-.project {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
+      .home::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("image.jpg") no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+      }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+      .heading {
+        font-family: "Century", sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px;
+        color: rgb(250, 212, 218);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
 
-form label {
-    margin: 5px 0;
-}
+      .button {
+        padding: 10px 50px;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        border: 2px solid white;
+        transition: 0.5s ease;
+      }
 
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-}
+      .button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
 
-form button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
+      .image img {
+        transition: all 150ms ease-in-out;
+      }
 
-</style>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Tagline or Short Description</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      .image img:hover {
+        transform: scale(1.1);
+        margin: 20px 50px;
+      }
 
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <img src="your_headshot.jpg" alt="Your Name" class="headshot">
+      /* Footer Styling */
+      footer {
+        text-align: center;
+        color: #333;
+        padding: 10px;
+        font-size: large;
+        background-color: rgb(247, 236, 223);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      footer i {
+        margin: 5px;
+        color: #f16371;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+      <div class="main">
+        <h1 class="heading">
+          I am <br />
+          Lindokuhle Ntombela
+        </h1>
+        <button class="button">Learn More</button>
+      </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short paragraph about yourself, your background, and your interests.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <li>Skill 4</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of your project. Include the technologies used and a link to the live demo or GitHub repo.</p>
+      <div id="image">
+        <h1 class="heading">ABOUT ME</h1>
+        <div id="introduction">
+          <h2>Lindokuhle Ntombela</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            tenetur quos ratione unde eum nihil repudiandae saepe ipsam dolorem
+            sed repellendus rerum, ad minima? Omnis maxime dolores excepturi
+            eaque at?
+          </p>
         </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of your project. Include the technologies used and a link to the live demo or GitHub repo.</p>
-        </div>
-        <!-- Add more projects as needed -->
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>If you’d like to get in touch, feel free to reach out!</p>
-        <ul>
-            <li>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li>
-            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li>
-        </ul>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 Lindokuhle Ntombela. All rights reserved.<br>
+        <i class="fa-brands fa-instagram fa-lg"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </p>
     </footer>
-
-    <script src="script.js"></script>
-</body>
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Simple validation (you can expand this as needed)
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-        alert('Message sent successfully!');
-        // Here you can implement form submission logic
-    } else {
-        alert('Please fill out all fields.');
-    }
-});
-
-</script>
+  </body>
 </html>

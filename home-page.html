@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>HOME</title>
     <style>
       .container{
@@ -12,8 +13,9 @@
         margin: auto 0;
         display: flex;
         align-items: center;
-        background-color: rgb(32, 32, 32);
-        position: sticky;
+        background-color: #333;
+        position: static;
+        justify-content: flex-end;
         top: 0;
         z-index: 1;
       }
@@ -22,6 +24,7 @@
         list-style: none;
         margin: 20px 0px;
         padding: 0px;
+       
       }
       .navbar ul li {
         font-family: "Times New Roman", Times, serif;
@@ -31,12 +34,14 @@
       .navbar ul li a {
         text-decoration: none;
         color: white;
-        padding: 8px 25px;
-        transition: all 150mms ease-in-out;
+        padding: 12px 20px;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 4px;
       }
       .navbar ul li a:hover {
-        background-color: white;
-        color: black;
+        background-color: rgb(250, 212, 218);
+        color: #666;
       }
       .home {
         display: flex;
@@ -76,7 +81,7 @@
         text-align: center;
         margin: 40px 0px;
         color: rgb(250, 212, 218);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
       .button {
         padding: 10px 154px;
@@ -88,7 +93,7 @@
       }
       .button:hover {
         cursor: pointer;
-        background-color: rgb(0.2, 0, 0, 0);
+        background-color: #666;
         color: black;
       }
       .image img{
@@ -101,22 +106,27 @@
       }
       footer{
         text-align: center;
-        color: white;
-        border: 1px solid black;
-        padding: 20px;
+        color:#333;
+        padding: 10px;
         font-size: large;
+        background-color: rgb(247, 236, 223);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
+      }
+      i{
+        margin: 5px;
+        color: #f16371;
       }
      
     </style>
   </head>
-  <body class="container">         
+  <body class="container">        
     <nav class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="home-page.html">Home</a></li>
         <li><a href="about.html" target="_blank">About</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -129,13 +139,13 @@
         <button class="button">Learn More</button>
       </div>
     </section>
-    <section id="about">
+     <!--  <section id="about">
       <div id="image">
         <h1 class="heading">ABOUT ME</h1>
-        <img
+     <img
           src="mypic.jpg"
-          
-        />
+         
+        
         <div id="introduction">
           <h2>Lindokuhle Ntombela</h2>
           <p>
@@ -148,8 +158,15 @@
       </div>
     </section>
     <footer>
-         <p>&copy; 2024 Lindokuhle Ntombela. All rights reserved.</p>
-    </footer>
+         <p>&copy; 2024 Lindokuhle Ntombela. All rights reserved.<br>
+                 <i class="fa-brands fa-instagram fa-lg"></i>
+                 <i class="fa-brands fa-linkedin" ></i>
+                 <i class="fa-brands fa-github"></i>
+                 <i class="fa-brands fa-facebook"></i>
+ 
+        </p>
+    </footer>-->
   </body>
 </html>
+ 
  

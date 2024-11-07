@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>About Me</title>
     <style>
       #about {
@@ -12,6 +13,40 @@
         box-sizing: border-box;
         padding: 20px;
         margin-bottom: 50px;
+      }
+      .navbar {
+        margin: auto 0;
+        display: flex;
+        align-items: center;
+        background-color: #333;
+        position: static;
+        justify-content: flex-end;
+        top: 0;
+        z-index: 1;
+      }
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+        padding: 0px;
+       
+      }
+      .navbar ul li {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        /*font-size: small;*/
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 12px 20px;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 4px;
+      }
+      .navbar ul li a:hover {
+        background-color: rgb(250, 212, 218);
+        color: #666;
       }
       h1 {
         top: 0;
@@ -26,9 +61,9 @@
         padding: 15px;
         text-align: center;
         color:rgb(73, 73, 73);
-      
+     
       }
-    
+   
       p{
         margin: 10px 0px ;
           font-size: 1.1em;
@@ -66,34 +101,55 @@
       margin: 20px;
       padding: 10px 15px;
      }
+      footer{
+        text-align: center;
+        color:#333;
+        padding: 10px;
+        font-size: large;
+        background-color: rgb(247, 236, 223);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+      }
+      i{
+        margin: 5px;
+        color: #f16371;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home-page.html">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
  
     <section id="home"></section>
  
     <section id="about">
-      <h1 class="heading">ABOUT ME</h1>
+     <!-- <h1 class="heading">ABOUT ME</h1>-->
       <h2 class="head">My Story</h2>
       <div id="image">
         <img
         src="Image.jpg"
-                                        
+                                       
         />
       </div>
       <div id="introduction">
         <h2 class="head">Lindokuhle Sphelele Ntombela</h2>
         <h3 class="head">"A STORY OF GROWTH AND DISCOVERY"</h3>
         <div class="column">
-
+ 
            <div class="clmn">
            <h3>Background</h3>
            <p>I am Lindokuhle Sphelele Ntombela and I hold a degree in Computer Science and Information Technology from the university of kwaZulu-Natal.I come from a <br>
             very small town called Mkuze where I complited both my primary and high school at Mtwazi Combined School.
            </p>
            </div>
-
+ 
            <div class="clmn">
            <h3>Skills</h3>  
            <p> I am highly skilled in Object-Oriented programming and well-versed in Java technologies, as well as numerous other programming<br>
@@ -102,7 +158,7 @@
             of new programs and technologies.
            </p>
            </div>
-
+ 
             <div class="clmn">
             <h3>currently</h3>
             <p>I am an organized, focused self-starter and dedicated team player who can work effectively in both team settings and independently.<br>
@@ -113,10 +169,20 @@
              an online SheCodes Plus program that is more focused on the front-end Development.
              </p>
             </div>
-    
+   
         </div>
         </div>
    
     </section>
+     <footer>
+         <p>&copy; 2024 Lindokuhle Ntombela. All rights reserved.<br>
+                 <i class="fa-brands fa-instagram fa-lg"></i>
+                 <i class="fa-brands fa-linkedin" ></i>
+                 <i class="fa-brands fa-github"></i>
+                 <i class="fa-brands fa-facebook"></i>
+ 
+        </p>
+    </footer>
   </body>
 </html>
+ 
