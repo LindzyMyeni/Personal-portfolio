@@ -127,7 +127,7 @@
         color: #333;
         padding: 10px;
         font-size: large;
-        background-color: rgb(247, 236, 223);
+        background-color: rgb(250, 227, 230);
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         width: 100%;
         margin-top: 40px; 
@@ -137,6 +137,17 @@
         margin: 5px;
         color: #f16371;
       }
+      i{
+        margin: 5px;
+        color: #f16371;
+        transition: color 0.2s ease-in-out;
+        text-decoration: none;
+        
+      }
+      i:hover{
+        color:white ;
+      }
+     
 
     </style>
 </head>
@@ -147,8 +158,8 @@
       <li><a href="home-page.html">Home</a></li>
       <li><a href="about.html" target="_blank">About</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
     </ul>
   </nav>
 
@@ -174,18 +185,26 @@
 
   <footer>
     <p>&copy; 2024 Lindokuhle Ntombela. All rights reserved.<br>
-        <i class="fa-brands fa-instagram fa-lg"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-facebook"></i>
-    </p>
-  </footer>
+       <a href="https://www.instagram.com/">
+         <i class="fa-brands fa-instagram fa-lg"></i>
+       </a>
+       <a href="https://www.linkedin.com/in/lindokuhle-ntombela-8b12b6269/">
+         <i class="fa-brands fa-linkedin"></i>
+       </a>
+       <a href="https://github.com/LindzyMyeni">
+         <i class="fa-brands fa-github"></i>
+       </a>
+       <a href="https://www.facebook.com/">
+         <i class="fa-brands fa-facebook"></i>
+       </a>
+   </p>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-    // Add an event listener to the form submission
+    
    // Add an event listener to the form submission
-document.getElementById("contactForm").addEventListener("submit", function (event) {
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
     // Prevent the default form submission
     event.preventDefault();
 
